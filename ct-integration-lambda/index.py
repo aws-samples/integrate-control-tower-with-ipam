@@ -53,8 +53,7 @@ def returnAvailableSubnet(supernetSet, usedSubnets, subnetPrefix, Region, Env):
         return freeSubnets[0]
     else:
         raise LookupError('no avaialble subets for this region and environment')
-    
-
+'''testing'''
 def getUsedCidrs(Region, Env):
     usedSubnets = []
     Records = scanDDB(table, Region=Region, Env=Env)
